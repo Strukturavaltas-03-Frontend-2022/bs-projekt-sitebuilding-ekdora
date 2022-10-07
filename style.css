@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Catamaran;
+    src: url(assets/fonts/Catamaran/static/Catamaran-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url(assets/fonts/Mulish/static/Mulish-Regular.ttf);
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    z-index: 21;
+    width: 100vw;
+    height: 56px;
+    background-image: url(assets/img/bg-pattern.png);
+    background-image: url(assets/img/bg-pattern.png), linear-gradient(to right, rgb(218, 36, 49), rgb(122, 67, 151));
+    background-repeat: repeat;
+}
+
+.navbar-brand {
+    color: rgb(253, 214, 87);
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-link {
+    font-size: 0.65rem !important;
+    color: thistle;
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-toggler-menu {
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5rem;
+    background-color: transparent;
+    border: 2px solid lightgrey;
+    border-radius: 0.25rem;
+}
+
+.intro-container {
+    background-image: url(assets/img/bg-pattern.png);
+    background-image: url(assets/img/bg-pattern.png), linear-gradient(to right, rgb(218, 36, 49), rgb(122, 67, 151));
+    background-repeat: repeat;
+    position: relative;
+    top: 56px;
+    padding: 6rem 0rem;
+}
+
+.intro {
+    font-size: 2rem;
+    font-family: Catamaran, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.intro-btn {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 1rem 2.5rem;
+}
+
+.intro-btn:hover {
+    background-color: #fdcc52;
+    transition-delay: 0.3s;
+}
+
+.img-phone {
+    width: 50vw;
+}
+
+.discover-container {
+    background-color: rgb(253, 202, 74);
+    position: relative;
+    top: 56px;
+    padding: 6rem 0rem;
+}
+
+.discover {
+    font-size: 3rem;
+    font-family: Catamaran, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.paragraph {
+    font-family: Mulish, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.img-fluid {
+    width: 30vw;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        background-image: none;
+        background-color: white;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-toggler-menu {
+        display: none;
+    }
+
+    .intro-container {
+        padding: 3rem 0rem 6rem 0rem;
+    }
+
+    .intro {
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro-btn {
+        font-size: 0.5rem;
+    }
+
+    .img-phone {
+        width: 20vw;
+        margin: 0;
+    }
+
+    .paragraph {
+        font-size: 0.75rem;
+    }
+
+    .img-fluid {
+        width: 10vw;
+    }
+}
