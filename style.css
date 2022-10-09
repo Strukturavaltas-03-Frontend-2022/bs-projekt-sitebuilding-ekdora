@@ -42,13 +42,7 @@ body {
     font-family: Mulish, Helvetica, Arial, sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
-    margin: 0;  
-}
-
-.section-container {
-    position: relative;
-    top: 56px;
-    padding: 6rem 0rem;
+    margin: 0;
 }
 
 .sticky {
@@ -60,10 +54,9 @@ body {
     font-family: Lato, Helvetica, Arial, sans-serif;
     z-index: 21;
     width: 100vw;
-    height: 56px;
-    background-image: url(assets/img/bg-pattern.png);
-    background-image: url(assets/img/bg-pattern.png), linear-gradient(to right, rgb(218, 36, 49), rgb(122, 67, 151));
-    background-repeat: repeat;
+    height: 4rem;
+    padding: 0rem 1rem;
+    line-height: 1;
 }
 
 .navbar-brand {
@@ -71,7 +64,7 @@ body {
 }
 
 .navbar-brand:hover {
-    color: rgb(255,255,255);;
+    color: rgb(255, 255, 255);
 }
 
 .nav-link {
@@ -83,7 +76,7 @@ body {
 }
 
 .nav-link:hover {
-    color: rgb(255,255,255);;
+    color: rgb(255, 255, 255);
 }
 
 .navbar-toggler-menu {
@@ -96,13 +89,19 @@ body {
     border-radius: 0.25rem;
 }
 
-.intro {
+.section-container {
+    position: relative;
+    top: 0;
+    padding: 6.5rem 0rem;
+}
+
+.intro-bg {
     background-image: url(assets/img/bg-pattern.png);
     background-image: url(assets/img/bg-pattern.png), linear-gradient(to right, rgb(218, 36, 49), rgb(122, 67, 151));
     background-repeat: repeat;
 }
 
-.intro-btn {
+.button {
     font-family: Lato, Helvetica, Arial, sans-serif;
     color: white;
     background-color: transparent;
@@ -114,64 +113,141 @@ body {
     padding: 1rem 2.5rem;
 }
 
-.intro-btn:hover {
+.button:hover {
     background-color: #fdcc52;
+    border-color: #fdcc52;
     transition-delay: 0.3s;
 }
 
 .img-phone {
-    width: 50vw;
-}
-
-.discover {
-    background-color: rgb(253, 202, 74);
+    width: 45vw;
 }
 
 .img-fluid {
     width: 30vw;
 }
 
-.features {
- background-color: rgb(255,255,255);
-}
-
 .fa {
     background: -webkit-linear-gradient(left, rgb(178, 48, 92), rgb(169, 53, 102));
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-heart {
+    color: rgb(221, 76, 57);
+}
+
+.fa-brands-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0.25rem;
+    opacity: 0.9;
+}
+
+.fa-brands {
+    color: rgb(255, 255, 255);
+}
+
+.twitter {
+    background-color: rgb(29, 161, 243);
+}
+
+.facebook {
+    background-color: rgb(59, 89, 153, 0.9);
+}
+
+.googleplus {
+    background-color: rgb(221, 76, 57, 0.9);
+}
+
+.twitter:hover,
+.facebook:hover,
+.googleplus:hover {
+    opacity: 1;
+}
+
+.getstarted-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/img/bg-cta.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    background-color: rgb(34, 34, 34);
+    font-size: 0.75rem;
+    font-family: Mulish, Helvetica, Arial, sans-serif;
+}
+
+.modaldiv:hover {
+    cursor: pointer;
+    color: #fdcc52;
 }
 
 @media screen and (max-width: 991px) {
     .navbar {
-        background-image: none;
-        background-color: white;
-        padding: 0.5rem 1.5rem;
+        padding: 0.125rem 1.5rem;
+    }
+
+    .nav-link {
+        color:grey;
+        font-weight: 600;
     }
 }
 
 @media screen and (min-width: 992px) {
+    .navbar {
+        background-image: url(assets/img/bg-pattern.png);
+        background-image: url(assets/img/bg-pattern.png), linear-gradient(to right, rgb(218, 36, 49), rgb(122, 67, 151));
+        background-repeat: repeat;
+    }
+
     .navbar-toggler-menu {
         display: none;
     }
 
-    .intro-container {
-        padding: 3rem 0rem 6rem 0rem;
-    }
-
-    .intro-btn {
-        font-size: 0.5rem;
-    }
-
     .img-phone {
-        width: 20vw;
+        width: 22vw;
         margin: 0;
     }
 
-    p {
-        font-size: 0.875rem;
+    .paragraph {
+        font-size: 1.125rem;
     }
 
     .img-fluid {
         width: 12vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .img-phone {
+        width: 19vw;
+        margin: 0;
+    }
+
+    .img-fluid {
+        width: 10vw;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .img-phone {
+        width: 16vw;
+        margin: 0;
+    }
+
+    .img-fluid {
+        width: 8vw;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .img-phone {
+        width: 13vw;
+        margin: 0;
     }
 }
