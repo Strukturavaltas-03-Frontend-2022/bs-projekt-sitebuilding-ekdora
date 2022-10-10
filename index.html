@@ -13,9 +13,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-white sticky">
+        <nav class="navbar navbar-expand-lg navbar-bg bg-white px-4 py-1">
             <a class="navbar-brand" href="#">Start Bootstrap</a>
-            <button class="navbar-toggler-menu navbar-light" type="button" data-toggle="collapse"
+            <button class="navbar-toggler-menu navbar-light px-2 py-1" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 Menu
@@ -24,13 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto d-flex flex-row">
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#download">Download <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" onclick="scrollToEl('#download'); return false;">Download</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#" onclick="scrollToEl('#features'); return false;">Features</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#" onclick="scrollToEl('#contact'); return false;">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -159,13 +159,13 @@
                         We <span><i class="fa-solid fa-heart"></i></span> new friends!
                     </div>
                     <div class="d-flex flex-lg-row align-items-center justify-content-center mt-3">
-                        <div class="fa-brands-bg twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                        <div class="fa-brands-bg d-flex align-items-center justify-content-center twitter m-1" data-toggle="tooltip" data-placement="top" title="Twitter">
                             <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2x"></i></a>
                         </div>
-                        <div class="fa-brands-bg facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                        <div class="fa-brands-bg d-flex align-items-center justify-content-center facebook m-1" data-toggle="tooltip" data-placement="top" title="Facebook">
                             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
                         </div>
-                        <div class="fa-brands-bg googleplus" data-toggle="tooltip" data-placement="top" title="Google">
+                        <div class="fa-brands-bg d-flex align-items-center justify-content-center googleplus m-1" data-toggle="tooltip" data-placement="top" title="Google">
                             <a href="https://www.google.com/"><i class="fa-brands fa-google-plus-g fa-2x"></i></a>
                         </div>
                     </div>
@@ -273,7 +273,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
 
 </body>
 

@@ -42,12 +42,6 @@ body {
     font-family: Mulish, Helvetica, Arial, sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
-    margin: 0;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
 }
 
 .navbar {
@@ -55,37 +49,37 @@ body {
     z-index: 21;
     width: 100vw;
     height: 4rem;
-    padding: 0rem 1rem;
     line-height: 1;
+    position: fixed;
+    top: 0;
 }
 
 .navbar-brand {
-    color: rgb(253, 214, 87);
+    color: rgb(253, 204, 82);
 }
 
 .navbar-brand:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(128,128,128);
 }
 
 .nav-link {
-    font-size: 0.65rem !important;
-    color: thistle;
+    color: rgb(128,128,128);
+    font-size: 0.75rem;
+    font-weight: 300;
     text-transform: uppercase;
-    font-size: small;
     letter-spacing: 2px;
 }
 
 .nav-link:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(253, 204, 82);
 }
 
 .navbar-toggler-menu {
-    padding: 0.25rem 0.75rem;
     font-size: 1rem;
-    color: black;
+    color: rgb(0,0,0);
     line-height: 1.5rem;
     background-color: transparent;
-    border: 2px solid lightgrey;
+    border: 2px solid rgb(211,211,211);
     border-radius: 0.25rem;
 }
 
@@ -103,19 +97,19 @@ body {
 
 .button {
     font-family: Lato, Helvetica, Arial, sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);;
     background-color: transparent;
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 2px;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);;
     border-radius: 30px;
     padding: 1rem 2.5rem;
 }
 
 .button:hover {
-    background-color: #fdcc52;
-    border-color: #fdcc52;
+    background-color: rgb(253, 204, 82);
+    border-color: rgb(253, 204, 82);
     transition-delay: 0.3s;
 }
 
@@ -138,13 +132,9 @@ body {
 }
 
 .fa-brands-bg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    margin: 0.25rem;
     opacity: 0.9;
 }
 
@@ -184,22 +174,11 @@ body {
 
 .modaldiv:hover {
     cursor: pointer;
-    color: #fdcc52;
-}
-
-@media screen and (max-width: 991px) {
-    .navbar {
-        padding: 0.125rem 1.5rem;
-    }
-
-    .nav-link {
-        color:grey;
-        font-weight: 600;
-    }
+    color: rgb(253, 204, 82);
 }
 
 @media screen and (min-width: 992px) {
-    .navbar {
+    .navbar-bg {
         background-image: url(assets/img/bg-pattern.png);
         background-image: url(assets/img/bg-pattern.png), linear-gradient(to right, rgb(218, 36, 49), rgb(122, 67, 151));
         background-repeat: repeat;
@@ -209,13 +188,30 @@ body {
         display: none;
     }
 
-    .img-phone {
-        width: 22vw;
-        margin: 0;
+    .nav-link {
+        color: rgb(216, 191, 216);
+    }
+
+    .navbar-brand:hover,
+    .nav-link:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar-scrolled-color {
+        color: rgb(128,128,128);
+    }
+
+    .navbar-scrolled-color:hover {
+        color: rgb(253, 204, 82);
     }
 
     .paragraph {
         font-size: 1.125rem;
+    }
+
+    .img-phone {
+        width: 22vw;
+        margin: 0;
     }
 
     .img-fluid {
@@ -226,7 +222,6 @@ body {
 @media screen and (min-width: 1200px) {
     .img-phone {
         width: 19vw;
-        margin: 0;
     }
 
     .img-fluid {
@@ -237,7 +232,6 @@ body {
 @media screen and (min-width: 1500px) {
     .img-phone {
         width: 16vw;
-        margin: 0;
     }
 
     .img-fluid {
@@ -248,6 +242,5 @@ body {
 @media screen and (min-width: 1800px) {
     .img-phone {
         width: 13vw;
-        margin: 0;
     }
 }
